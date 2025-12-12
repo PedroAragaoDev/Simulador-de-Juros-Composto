@@ -18,11 +18,11 @@ O usuário informa o capital inicial, aportes mensais, taxa de juros e período 
 
 ✔️ Exibição separada de:
 
-Total acumulado
+- Total acumulado
 
-Total investido
+- Total investido
 
-Total em juros
+- Total em juros
 
 ✔️ Formatação monetária em reais (R$ 1.234,56)
 
