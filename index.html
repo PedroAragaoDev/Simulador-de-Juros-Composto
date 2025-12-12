@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Juros Compostos</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<section class="container">
+    <h1>Simulador de Juros Compostos</h1>
+
+    <form>
+
+       
+        <div class="row">
+            <div class="field">
+                <label>Valor inicial (Capital)</label>
+                <input type="number" id="capital" placeholder="Ex: 1000">
+            </div>
+
+            <div class="field">
+                <label>Aportes Mensais (R$)</label>
+                <input type="number" id="aporte" placeholder="Ex: 200">
+            </div>
+        </div>
+
+       
+        <div class="row">
+            <div class="field">
+                <label>Taxa de Juros (%)</label>
+                <div class="with-select">
+                    <input type="number" id="taxa" placeholder="Ex: 1.2">
+                    <select id="unidadeTaxa">
+                        <option value="meses">Mês</option>
+                        <option value="anos">Ano</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="field">
+                <label>Período</label>
+                <div class="with-select">
+                    <input type="number" id="periodo" placeholder="Ex: 12">
+                    <select id="unidade">
+                        <option value="meses">Meses</option>
+                        <option value="anos">Anos</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="button-area">
+            <button type="button" onclick="calcular()">Calcular</button>
+        </div>
+
+        <div class="resultados-container">
+
+    <div class="campo-resultado">
+        <label for="totalAcumulado">Valor Total Acumulado</label>
+        <input type="text" id="totalAcumulado" readonly>
+    </div>
+
+    <div class="campo-resultado">
+        <label for="totalInvestido">Valor Total Investido</label>
+        <input type="text" id="totalInvestido" readonly>
+    </div>
+
+    <div class="campo-resultado">
+        <label for="totalJuros">Total em Juros</label>
+        <input type="text" id="totalJuros" readonly>
+    </div>
+
+</div>
+
+    </form>
+</section>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
