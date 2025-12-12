@@ -49,9 +49,6 @@ i = Taxa de juros
 
 t = Tempo em meses
 
-## ▶️ Como usar
-
-
 
 ## 🛠️ Tecnologias utilizadas
 
